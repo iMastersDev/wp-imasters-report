@@ -14,9 +14,9 @@ Este widget busca sempre o vídeo mais atual do perfil iMasters no Videolog e tr
 
 == Installation ==
 
-1. Faça o upload do arquivo 'imastersreport.php' para a pasta '/wp-=content/plugins/'
+1. Faça o upload da pasta 'imasters_report/' para a pasta '/wp-content/plugins/'
 2. Ative o plugin no Menu 'Plugins' do Wordpress.
-3. Use e abuse.
+3. Basta acessar o menu widget e posicioná-lo no local desejado.
 
 == Frequently Asked Questions ==
 
