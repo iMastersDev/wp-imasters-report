@@ -29,15 +29,20 @@ Não há screenshots
 
 == Changelog ==
 
+= 0.2 =
+* Implementação da opção de modificação do tamanho do player
+
 = 0.1 =
 * Versão de lançamento.
 
 == Upgrade Notice ==
+
+= 0.2 =
+* Facilita a integração com layouts com sidebar maiores que o padrão
 
 = 0.1 =
 * No upgrade reasons
 
 == RoadMap ==
 
-* Personalização de tamanho para o player
 * Personalização de cores para o player
