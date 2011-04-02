@@ -3,7 +3,7 @@
 Plugin Name: iMasters Report
 Plugin URI: http://videolog.tv/imasters
 Description: Plugin para exibir o iMasters Report
-Version: 0.1
+Version: 0.3
 Author: Alê Borba
 Author URI: http://universidadelivre.aleborba.com.br
 */
@@ -15,7 +15,15 @@ function imasters_report($args) {
 
     $videolog   = new vlog("3e7de16a-33f6-45cd-8547-f24fc5ec7f2a");
     $videos     = $videolog->getUserVideos("336169");
-    $id_video   = $videos->usuario->videos[0]->id;
+
+    //Variável de controle
+    $idx = 0;
+    //Verifica se o vídeo retornado é realmente um Report, se não for pula para o próximo.
+    while(!strpos($videos->usuario->videos[$idx]->titulo, "Report")) {
+    $idx++;
+    }
+
+    $id_video   = $videos->usuario->videos[$idx]->id;
 
     $options    = get_option('imasters_report');
 
